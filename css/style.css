@@ -3,3 +3,311 @@
  Date: 10/03/2022
  File Name: styles.css
  */
+
+
+/* Reset CSS */
+
+body,
+div,
+p,
+figure,
+img,
+h3 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+/* style rules for body */
+
+body {
+    background-color: #170F23;
+    line-height: 1.5;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+}
+
+div {
+    display: block;
+}
+
+div,
+p {
+    word-break: break-word;
+}
+
+img {
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* style rule for main */
+
+.container {
+    flex-grow: 1;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+}
+
+.playlist-detail-container {
+    padding-top: 20px;
+}
+
+.mar-b-30 {
+    margin-bottom: 30px!important;
+}
+
+
+/* style rule for head element */
+
+.media {
+    align-items: center;
+    display: flex;
+    text-align: left;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+/* playlist header */
+
+.playlist-header .media-left {
+    margin-right: 20px;
+}
+
+.media-left {
+    margin-right: 10px;
+}
+
+.media-left,
+.media-right {
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+
+/* media left */
+
+.zm-card {
+    max-width: 100%;
+    position: relative;
+}
+
+.zm-card figure img {
+    display: block;
+    position: relative;
+    border-radius: 8px;
+}
+
+.zm-card figure {
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+figure {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+
+
+/* media content here */
+
+.playlist-header .media-content {
+    display: flex;
+    flex-direction: column;
+    align-self: normal;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.media-content {
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+    text-align: left;
+    align-self: center;
+    width: 0;
+}
+
+.playlist-header .media-content .content-top .title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 0;
+    text-transform: none;
+}
+
+.artists,
+.like {
+    font-size: 12px;
+    line-height: 1.5;
+    color: hsla(0, 0%, 100%, 0.5);
+}
+
+.artists a {
+    color: inherit;
+}
+
+.artists a:hover {
+    color: #7200A1;
+    text-decoration: underline;
+}
+
+.ic-star::before {
+    content: "\2605";
+    font-size: 15px;
+    margin-left: 2px;
+    display: inline;
+}
+
+
+/* action */
+
+.playlist-header .media-content .actions {
+    display: flex;
+    justify-content: center;
+}
+
+.zm-btn {
+    font-size: 14px;
+    border-radius: 999px;
+    line-height: normal;
+    border: 0;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.playlist-header .media-content .actions .btn-play-all {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    padding: 9px 24px;
+    background-color: #7200a1;
+    border-color: #7200a1;
+    color: #fff
+}
+
+.is-upper {
+    text-transform: uppercase;
+}
+
+.ic-play {
+    width: 14px;
+    height: 14px;
+    margin-right: 2px;
+}
+
+.zm-btn:hover {
+    opacity: 0.7;
+}
+
+.playlist-header .media-content .actions .level {
+    justify-content: center;
+}
+
+.level {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.level .level-item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
+.level-item {
+    align-items: center;
+    display: flex;
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: center;
+}
+
+.playlist-header .media-content .actions .zm-tooltip-btn.zm-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    background-color: #2F2739;
+    margin-right: 10px;
+    color: white;
+}
+
+.ic-heart::before {
+    content: "\2661";
+    font-size: 25px;
+}
+
+.ic-more {
+    transform: rotate(90deg);
+    width: 130%;
+}
+
+
+/* playlist content here*/
+
+
+/* responsive for desktop */
+
+@media screen and (min-width: 1200px) {
+    /* main */
+    /* head */
+    .playlist-header {
+        display: block;
+        width: 300px;
+        float: left;
+    }
+    /* image figure */
+    .zm-card figure {
+        width: 300px;
+        height: 300px;
+    }
+    /* media content here */
+    .playlist-header .media-content {
+        display: flex;
+        align-items: center;
+        margin-top: 12px;
+        width: 100%;
+    }
+    /* content top */
+    .playlist-header .media-content .content-top .title {
+        white-space: normal;
+    }
+    .playlist-header .media-content .content-top {
+        text-align: center;
+    }
+    /* action */
+    .playlist-header .media-content .actions {
+        flex-direction: column;
+        margin-top: 16px;
+    }
+    .playlist-header .media-content .actions .btn-play-all {
+        margin-bottom: 16px;
+    }
+}
