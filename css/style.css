@@ -71,6 +71,10 @@ a {
     margin-bottom: 30px!important;
 }
 
+.mar-t-30 {
+    margin-top: 30px;
+}
+
 
 /* style rule for head element */
 
@@ -129,6 +133,23 @@ figure {
     margin-inline-end: 40px;
 }
 
+.font-15 {
+    font-size: 15px;
+}
+
+.font-20 {
+    font-size: 20px;
+}
+
+.mar-lr-5 {
+    margin: 0 5px;
+}
+
+.zm-section-title {
+    margin-left: 10px;
+    margin-bottom: 16px;
+}
+
 
 /* media content here */
 
@@ -158,7 +179,8 @@ figure {
 }
 
 .artists,
-.like {
+.like,
+.grey {
     font-size: 12px;
     line-height: 1.5;
     color: hsla(0, 0%, 100%, 0.5);
@@ -259,9 +281,9 @@ figure {
     color: white;
 }
 
-.ic-heart::before {
-    content: "\2661";
-    font-size: 25px;
+#ic-heart {
+    font-size: 23px;
+    color: #fff;
 }
 
 .ic-more {
@@ -272,12 +294,75 @@ figure {
 
 /* playlist content here*/
 
+.mar-b-10 {
+    margin-bottom: 10px!important;
+}
+
+
+/* select header */
+
+.song-list-select .select-header {
+    height: 46px;
+    justify-content: space-between;
+}
+
+.song-list-select .select-header .sort-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.song-list-select .select-header .column-text {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%, 0.5);
+    margin: 0 30px;
+}
+
+.select-item {
+    display: flex;
+    position: relative;
+    height: 60px;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.song-list-select .select-item {
+    background-color: #2F2739;
+}
+
+.select-item .item {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.song-list-select .select-item .select-item-left {
+    display: flex;
+    height: 60px;
+    align-items: center;
+}
+
+.song-list-select .select-item .select-item-right {
+    margin-right: 20px;
+}
+
+.is-40x40 {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+}
+
+.is-40x40 img {
+    border-radius: 5px;
+}
+
 
 /* responsive for desktop */
 
 @media screen and (min-width: 1200px) {
     /* main */
-    /* head */
+    /* playlist header here */
     .playlist-header {
         display: block;
         width: 300px;
@@ -309,5 +394,9 @@ figure {
     }
     .playlist-header .media-content .actions .btn-play-all {
         margin-bottom: 16px;
+    }
+    /* playlist content here*/
+    .playlist-detail-container .playlist-content {
+        margin-left: 330px;
     }
 }

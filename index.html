@@ -40,7 +40,7 @@
                     <div class="actions">
                         <button class="zm-btn btn-play-all active is-medium is-upper button"><img class="ic-play" src="/images/play-icon.svg"><span>Phát tất cả</span></button>
                         <div class="level">
-                            <div class="level-item "><button class="zm-btn zm-tooltip-btn "><span class="ic-heart"></span></button></div>
+                            <div class="level-item "><button class="zm-btn zm-tooltip-btn " onclick="love()"><span id="ic-heart">&#9825;</span></button></div>
                             <div class="level-item "><button class="zm-btn zm-tooltip-btn "><img class="ic-more" src="images/3-dot-icon.jpg"></button></div>
                         </div>
                     </div>
@@ -48,16 +48,49 @@
             </div>
             <!-- playlist content here -->
             <div class="playlist-content">
+                <!-- song list selected here -->
+                <div class="list mar-b-10 song-list-ablum song-list-select">
+                    <div class="media select-header">
+                        <div class="media-left">
+                            <div class="sort-wrapper">
+                                <div class="column-text">Bài hát</div>
+                            </div>
+                        </div>
+                        <div class="media-right">
+                            <div class="column-text"> Thời gian</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="select-item">
+                            <div class="media item">
+                                <div class="select-item-left">
+                                    <span class="grey font-15 mar-lr-5">1</span>
+                                    <div class="is-40x40"><img src="/images/chayvekhocvoianh.webp "></div>
+                                    <div class="card-info">
+                                        <span>Chạy về khóc với anh</span>
+                                        <div class="grey font-15">ERIK<span class="icon ic-star"></span></div>
+                                    </div>
+                                </div>
+                                <div class="select-item-right">
+                                    <span class="grey">03:44</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- channel section here -->
+                <div class="container mar-t-30 ">
+                    <h3 class="zm-section-title font-20">Bạn Có Thể Quan Tâm</h3>
+                </div>
+            </div>
+            <!-- none -->
+            <div class="zm-section playlist-section channel-section mar-t-30 ">
 
             </div>
+            <div class="zm-section playlist-section channel-section mar-t-30 "></div>
+            <div id="zmp3_Masthead_Inline " class="channel-section mar-t-30 "></div>
         </div>
-        <!-- none -->
-        <div class="zm-section playlist-section channel-section mar-t-30">
-
-        </div>
-        <div class="zm-section playlist-section channel-section mar-t-30"></div>
-        <div id="zmp3_Masthead_Inline" class="channel-section mar-t-30"></div>
-    </div>
+        <script src="./scripts/script.js "></script>
 </body>
 
 </html>
