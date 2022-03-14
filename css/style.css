@@ -202,6 +202,10 @@ figure {
     display: inline;
 }
 
+.card-info {
+    width: 500px;
+}
+
 
 /* action */
 
@@ -325,6 +329,7 @@ figure {
     height: 60px;
     border-radius: 5px;
     margin: 0 10px;
+    border-bottom: solid 1px gray;
 }
 
 .song-list-select .select-item {
@@ -337,14 +342,21 @@ figure {
     align-items: center;
 }
 
-.song-list-select .select-item .select-item-left {
+.select-item-left {
     display: flex;
     height: 60px;
     align-items: center;
+    flex-grow: 1;
 }
 
-.song-list-select .select-item .select-item-right {
+.select-item-right {
     margin-right: 20px;
+}
+
+.channel-section .list .select-item .item .select-item-right {
+    justify-content: space-between;
+    flex-grow: 5;
+    display: flex;
 }
 
 .is-40x40 {
@@ -355,6 +367,20 @@ figure {
 
 .is-40x40 img {
     border-radius: 5px;
+}
+
+.album {
+    text-align: left;
+    width: 70%;
+}
+
+.album a {
+    width: 300px;
+}
+
+.album a:hover {
+    color: #7200A1;
+    text-decoration: underline;
 }
 
 
