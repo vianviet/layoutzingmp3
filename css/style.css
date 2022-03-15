@@ -12,7 +12,8 @@ div,
 p,
 figure,
 img,
-h3 {
+h3,
+button {
     margin: 0;
     padding: 0;
     border: 0;
@@ -143,6 +144,14 @@ figure {
 
 .mar-lr-5 {
     margin: 0 5px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.border-radius-5 {
+    border-radius: 5px;
 }
 
 .zm-section-title {
@@ -378,9 +387,80 @@ figure {
     width: 300px;
 }
 
-.album a:hover {
+.select-item a:hover {
     color: #7200A1;
     text-decoration: underline;
+}
+
+
+/* Other Options */
+
+.other-options-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.other-options-title h3 {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.button-other-options {
+    margin-right: 15px;
+}
+
+.button-other-options a:hover {
+    color: #7200a1;
+}
+
+.next-page,
+.previous-page {
+    background-color: #170F23;
+    font-size: 20px;
+    margin: 0 8px;
+}
+
+.next-page {
+    color: #fff;
+}
+
+.previous-page {
+    color: #2F2739;
+}
+
+.other-options-list {
+    display: flex;
+    margin-top: 10px;
+}
+
+.other-options-item {
+    width: 20%;
+    margin: 20px;
+}
+
+.other-options-item .content {
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+}
+
+.other-options-item .content a:hover {
+    color: #7200A1;
+    text-decoration: underline;
+}
+
+.other-options-item .first-column {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.images-options {
+    text-align: center;
+}
+
+.circle {
+    border-radius: 200px;
 }
 
 
@@ -424,5 +504,17 @@ figure {
     /* playlist content here*/
     .playlist-detail-container .playlist-content {
         margin-left: 330px;
+    }
+    .channel-section {
+        margin-bottom: 150px;
+    }
+}
+
+
+/* responsive for mobile */
+
+@media screen and (max-width: 800px) {
+    .album a {
+        display: none;
     }
 }
